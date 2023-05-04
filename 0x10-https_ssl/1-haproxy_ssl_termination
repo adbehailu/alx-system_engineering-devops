@@ -51,8 +51,12 @@ frontend www-https
                                                                                                                                         
 backend www-backend                                                                                                                     
    redirect scheme https if !{ ssl_fc }                                                                                                 
-   server 145-web-01 54.224.22.243 check                                                                                               
-   server 145-web-02 18.209.152.22 check                                                                                              
-                                                        
+   server 145-web-01 34.73.20.46:80 check                                                                                               
+   server 145-web-02 34.73.71.102:80 check                                                                                              
+                                                                                                                                        
 backend letsencrypt-backend                                                                                                             
-   server letsencrypt 100.26.254.189
+   server letsencrypt 127.0.0.1:54321                                                                                                   
+                                                                                                                                        
+                                                                            
+                                                                                                                
+                                                                                                                                        
