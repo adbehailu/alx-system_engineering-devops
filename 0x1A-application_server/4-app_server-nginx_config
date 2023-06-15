@@ -32,3 +32,4 @@ server {
     # 404 error page
     error_page 404 /404.html;
 }
+
